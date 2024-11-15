@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch", "FilmoSearch\FilmoSearch.csproj", "{A775FC6C-9070-4B5D-8553-B5AB2A30F53E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch.Logging", "FilmoSearch.Logging\FilmoSearch.Logging.csproj", "{77B5BDAD-B5E2-4975-AF2B-F41E28F21666}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch.Contracts", "FilmoSearch.Contracts\FilmoSearch.Contracts.csproj", "{F052797F-EE8F-49B8-9AC3-6F7857F85D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmoSearch.Entities", "FilmoSearch.Entities\FilmoSearch.Entities.csproj", "{4599E59A-B6F0-42EF-8422-674E42F69E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmoSearch.Repository", "FilmoSearch.Repository\FilmoSearch.Repository.csproj", "{AE1111DA-412E-40F3-BC50-686DEBD08085}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A775FC6C-9070-4B5D-8553-B5AB2A30F53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A775FC6C-9070-4B5D-8553-B5AB2A30F53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A775FC6C-9070-4B5D-8553-B5AB2A30F53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A775FC6C-9070-4B5D-8553-B5AB2A30F53E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B5BDAD-B5E2-4975-AF2B-F41E28F21666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B5BDAD-B5E2-4975-AF2B-F41E28F21666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B5BDAD-B5E2-4975-AF2B-F41E28F21666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B5BDAD-B5E2-4975-AF2B-F41E28F21666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F052797F-EE8F-49B8-9AC3-6F7857F85D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F052797F-EE8F-49B8-9AC3-6F7857F85D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F052797F-EE8F-49B8-9AC3-6F7857F85D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F052797F-EE8F-49B8-9AC3-6F7857F85D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4599E59A-B6F0-42EF-8422-674E42F69E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4599E59A-B6F0-42EF-8422-674E42F69E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4599E59A-B6F0-42EF-8422-674E42F69E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4599E59A-B6F0-42EF-8422-674E42F69E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE1111DA-412E-40F3-BC50-686DEBD08085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1111DA-412E-40F3-BC50-686DEBD08085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1111DA-412E-40F3-BC50-686DEBD08085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1111DA-412E-40F3-BC50-686DEBD08085}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC31C972-075C-456E-BCC3-F80F355DB90A}
+	EndGlobalSection
+EndGlobal

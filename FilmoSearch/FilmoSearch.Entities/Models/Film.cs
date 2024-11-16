@@ -5,6 +5,7 @@ namespace FilmoSearch.Entities.Models
 {
     public class Film
     {
+        [Key]
         [Column("FilmId")]
         public Guid FilmId { get; set; }
 
@@ -15,10 +16,7 @@ namespace FilmoSearch.Entities.Models
         public string Country { get; set; }
         public DateTimeOffset CreatedAt { get; set; }
 
-        [ForeignKey(nameof(Review))]
-        public Guid ReviewId { get; set; }
         public Review Review { get; set; }
-
 
         public ICollection<Actor> Actors { get; set; }
 

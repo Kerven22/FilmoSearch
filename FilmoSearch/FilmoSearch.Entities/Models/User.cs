@@ -5,6 +5,7 @@ namespace FilmoSearch.Entities.Models
 {
     public class User
     {
+        [Key]
         [Column("UserId")]
         public Guid UserId { get; set; }
 

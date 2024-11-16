@@ -5,6 +5,7 @@ namespace FilmoSearch.Entities.Models
 {
     public class Comment
     {
+        [Key]
         [Column("CommentId")]
         public Guid CommentId { get; set; }
         [Required(ErrorMessage = "Title is a required field!")]

@@ -5,6 +5,7 @@ namespace FilmoSearch.Entities.Models
 {
     public class Review
     {
+        [Key]
         [Column("ReviewId")]
         public Guid ReviewId { get; set; }
 
@@ -13,6 +14,6 @@ namespace FilmoSearch.Entities.Models
 
         [ForeignKey(nameof(Film))]
         public Guid FilmId { get; set; }
-        public Film Film { get; set; }
+        public Film? Film { get; set; }
     }
 }

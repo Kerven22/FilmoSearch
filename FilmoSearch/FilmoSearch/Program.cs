@@ -1,5 +1,4 @@
-using FilmoSearch.Contracts;
-using FilmoSearch.Logging;
+using FilmoSearch.Extentions;
 using FilmoSearch.Repository.Contexts;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,10 +8,11 @@ builder.Services.AddControllers();
 //builder.Services.AddSingleton<ILoggerManager, LoggerManager>();
 string? connection = builder.Configuration.GetConnectionString("MsSqlConnection");
 
-builder.Services.AddDbContext<RepositoryMsSqlContext>(options => options.UseSqlServer(connection));                               
+builder.Services.AddDbContext<RepositoryMsSqlContext>(options => options.UseSqlServer(connection));
+builder.Services.ConfigureRepositoryManager(); 
 
 var app = builder.Build();
 
-app.MapControllers(); 
+app.MapControllers();
 
 app.Run();

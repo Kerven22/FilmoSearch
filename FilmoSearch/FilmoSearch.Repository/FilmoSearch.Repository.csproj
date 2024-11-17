@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FilmoSearch.Contracts\FilmoSearch.Contracts.csproj" />
     <ProjectReference Include="..\FilmoSearch.Entities\FilmoSearch.Entities.csproj" />
   </ItemGroup>
 

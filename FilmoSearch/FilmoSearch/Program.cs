@@ -9,7 +9,8 @@ builder.Services.AddControllers();
 string? connection = builder.Configuration.GetConnectionString("MsSqlConnection");
 
 builder.Services.AddDbContext<RepositoryMsSqlContext>(options => options.UseSqlServer(connection));
-builder.Services.ConfigureRepositoryManager(); 
+builder.Services.ConfigureRepositoryManager();
+builder.Services.ConfigureServiceManager(); 
 
 var app = builder.Build();
 

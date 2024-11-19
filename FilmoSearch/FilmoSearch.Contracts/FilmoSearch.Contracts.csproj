@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FilmoSearch.Entities\FilmoSearch.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

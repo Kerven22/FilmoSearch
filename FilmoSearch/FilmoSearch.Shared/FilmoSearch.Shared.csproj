@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\FilmoSearch.Shared\FilmoSearch.Shared.csproj" />
-  </ItemGroup>
-
 </Project>

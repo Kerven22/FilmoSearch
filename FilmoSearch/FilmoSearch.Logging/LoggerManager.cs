@@ -7,9 +7,9 @@ namespace FilmoSearch.Logging
     {
         private readonly ILogger logger;
 
-        public LoggerManager(ILogger logger)
+        public LoggerManager()
         {
-            this.logger = logger; 
+
         }
 
         public void LogDebug(string message) => logger.Debug(message);

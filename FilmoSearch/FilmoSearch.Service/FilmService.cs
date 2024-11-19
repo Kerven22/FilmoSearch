@@ -1,5 +1,6 @@
 ﻿using FilmoSearch.Contracts;
 using FilmoSearch.Serivce.Contracts;
+using FilmoSearch.Shared.DataTranferObjects;
 
 namespace FilmoSearch.Service
 {
@@ -12,6 +13,21 @@ namespace FilmoSearch.Service
         {
             this.repositoryManager = repositoryManager;
             this.loggerManager = loggerManager;
+        }
+
+        public IEnumerable<FilmDto> GetAllFilms(bool trackChanges)
+        {
+            try
+            {
+                var film = repositoryManager.Film.GetAllFilms(trackChanges);
+                var filmDto = film.Select(c => new FilmDto(c.FilmId, c.Title, c.Url, c.Country??""));
+                return filmDto; 
+            }
+            catch(Exception ex)
+            {
+                loggerManager.LogError($"Something went wrong in the {nameof(GetAllFilms)} services methot {ex}");
+                throw;
+            }
         }
     }
 }

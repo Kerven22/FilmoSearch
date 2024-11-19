@@ -19,7 +19,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FilmoSearch.Logging\FilmoSearch.Logging.csproj" />
+    <ProjectReference Include="..\FilmoSearch.Presentation\FilmoSearch.Presentation.csproj" />
     <ProjectReference Include="..\FilmoSearch.Repository\FilmoSearch.Repository.csproj" />
+    <ProjectReference Include="..\FilmoSearch.Serivce.Contracts\FilmoSearch.Serivce.Contracts.csproj" />
+    <ProjectReference Include="..\FilmoSearch.Service\FilmoSearch.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FilmoSearch.Contracts\FilmoSearch.Contracts.csproj" />
-    <ProjectReference Include="..\FilmoSearch.Serivce.Contracts\FilmoSearch.Serivce.Contracts.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
 </Project>

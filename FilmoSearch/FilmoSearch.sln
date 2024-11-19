@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch.Logging", "Film
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch.Contracts", "FilmoSearch.Contracts\FilmoSearch.Contracts.csproj", "{F052797F-EE8F-49B8-9AC3-6F7857F85D92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmoSearch.Entities", "FilmoSearch.Entities\FilmoSearch.Entities.csproj", "{4599E59A-B6F0-42EF-8422-674E42F69E09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch.Entities", "FilmoSearch.Entities\FilmoSearch.Entities.csproj", "{4599E59A-B6F0-42EF-8422-674E42F69E09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmoSearch.Repository", "FilmoSearch.Repository\FilmoSearch.Repository.csproj", "{AE1111DA-412E-40F3-BC50-686DEBD08085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch.Repository", "FilmoSearch.Repository\FilmoSearch.Repository.csproj", "{AE1111DA-412E-40F3-BC50-686DEBD08085}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch.Presentation", "FilmoSearch.Presentation\FilmoSearch.Presentation.csproj", "{B1AA7DC8-3C84-4240-BBA0-3A9B1FF16B57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch.Serivce.Contracts", "FilmoSearch.Serivce.Contracts\FilmoSearch.Serivce.Contracts.csproj", "{5EC5959F-9378-4667-AA9B-0D5E20A86F7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmoSearch.Service", "FilmoSearch.Service\FilmoSearch.Service.csproj", "{5FCCF547-5391-4B01-BBE1-BFA2DBAAFC0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{AE1111DA-412E-40F3-BC50-686DEBD08085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE1111DA-412E-40F3-BC50-686DEBD08085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE1111DA-412E-40F3-BC50-686DEBD08085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1AA7DC8-3C84-4240-BBA0-3A9B1FF16B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1AA7DC8-3C84-4240-BBA0-3A9B1FF16B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1AA7DC8-3C84-4240-BBA0-3A9B1FF16B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1AA7DC8-3C84-4240-BBA0-3A9B1FF16B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC5959F-9378-4667-AA9B-0D5E20A86F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EC5959F-9378-4667-AA9B-0D5E20A86F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EC5959F-9378-4667-AA9B-0D5E20A86F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EC5959F-9378-4667-AA9B-0D5E20A86F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FCCF547-5391-4B01-BBE1-BFA2DBAAFC0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FCCF547-5391-4B01-BBE1-BFA2DBAAFC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FCCF547-5391-4B01-BBE1-BFA2DBAAFC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FCCF547-5391-4B01-BBE1-BFA2DBAAFC0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

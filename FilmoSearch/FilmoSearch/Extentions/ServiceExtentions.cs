@@ -15,7 +15,7 @@ namespace FilmoSearch.Extentions
             services.AddScoped<IServiceManager, ServiceManager>();
 
         public static void ConfigureLogger(this IServiceCollection services) =>
-            services.AddScoped<ILoggerManager, LoggerManager>();
+            services.AddSingleton<ILoggerManager, LoggerManager>();
 
         public static void AddPresentationLayer(this IServiceCollection services) =>
             services.AddControllers().AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly); 

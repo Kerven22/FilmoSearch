@@ -26,5 +26,14 @@ namespace FilmoSearch.Service
 
             return filmsDto; 
         }
+
+
+
+        public FilmDto GetFilm(Guid filmId, bool trackChanges)
+        {
+            var film = repositoryManager.Film.GetFilm(filmId, trackChanges);
+            var filmDto = mapper.Map<FilmDto>(film);
+            return filmDto; 
+        }
     }
 }

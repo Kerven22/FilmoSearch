@@ -4,6 +4,8 @@ namespace FilmoSearch.Contracts
 {
     public interface IFilmRepository
     {
-        IEnumerable<Film> GetAllFilms(bool trackChanges); 
+        IEnumerable<Film> GetAllFilms(bool trackChanges);
+
+        Film GetFilm(Guid filmId, bool trackChanges); 
     }
 }

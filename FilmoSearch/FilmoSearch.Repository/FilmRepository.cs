@@ -13,5 +13,8 @@ namespace FilmoSearch.Repository
 
         public IEnumerable<Film> GetAllFilms(bool trackChanges) =>
             FindAll(trackChanges).OrderBy(c => c.Title).ToList();
+
+        public Film GetFilm(Guid filmId, bool trackChanges) =>
+            FindByCondition(c => c.FilmId.Equals(filmId), trackChanges).SingleOrDefault(); 
     }
 }

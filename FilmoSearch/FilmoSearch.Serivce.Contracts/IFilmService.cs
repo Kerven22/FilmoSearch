@@ -4,6 +4,8 @@ namespace FilmoSearch.Serivce.Contracts
 {
     public interface IFilmService
     {
-        IEnumerable<FilmDto> GetAllFilms(bool trackChanges); 
+        IEnumerable<FilmDto> GetAllFilms(bool trackChanges);
+
+        FilmDto GetFilm(Guid filmId, bool trackChanges); 
     }
 }

@@ -18,8 +18,15 @@ namespace FilmoSearch.Presentation.Controllers
         [HttpGet]
         public IActionResult GetCompanies()
         {
-            var companies = _service.FilmService.GetAllFilms(trackChanges: false);
-            return Ok(companies); 
+            var films = _service.FilmService.GetAllFilms(trackChanges: false);
+            return Ok(films); 
+        }
+
+        [HttpGet("{filmId:guid}")]
+        public IActionResult GetFilm(Guid filmId)
+        {
+            var film = _service.FilmService.GetFilm(filmId, trackChanges: false);
+            return Ok(film); 
         }
     }
 }

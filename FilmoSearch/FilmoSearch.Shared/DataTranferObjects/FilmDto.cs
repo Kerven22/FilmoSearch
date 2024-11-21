@@ -1,4 +1,10 @@
 ﻿namespace FilmoSearch.Shared.DataTranferObjects
 {
-    public record FilmDto(Guid id, string Title, string path, string country); 
+    public class FilmDto
+    {
+        public Guid Id { get; set; }
+        public string Title { get; set; }
+        public string Url { get; set; }
+        public string Country { get; set; }
+    }
 }

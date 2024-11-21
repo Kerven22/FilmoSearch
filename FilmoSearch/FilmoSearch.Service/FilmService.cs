@@ -1,4 +1,5 @@
-﻿using FilmoSearch.Contracts;
+﻿using AutoMapper;
+using FilmoSearch.Contracts;
 using FilmoSearch.Serivce.Contracts;
 using FilmoSearch.Shared.DataTranferObjects;
 
@@ -8,26 +9,22 @@ namespace FilmoSearch.Service
     {
         private readonly IRepositoryManager repositoryManager;
         private readonly ILoggerManager loggerManager;
+        private readonly IMapper mapper;
 
-        public FilmService(IRepositoryManager repositoryManager, ILoggerManager loggerManager)
+        public FilmService(IRepositoryManager repositoryManager, ILoggerManager loggerManager, IMapper mapper)
         {
             this.repositoryManager = repositoryManager;
             this.loggerManager = loggerManager;
+            this.mapper = mapper;
         }
 
         public IEnumerable<FilmDto> GetAllFilms(bool trackChanges)
         {
-            try
-            {
-                var film = repositoryManager.Film.GetAllFilms(trackChanges);
-                var filmDto = film.Select(c => new FilmDto(c.FilmId, c.Title, c.Url, c.Country??""));
-                return filmDto; 
-            }
-            catch(Exception ex)
-            {
-                loggerManager.LogError($"Something went wrong in the {nameof(GetAllFilms)} services methot {ex}");
-                throw;
-            }
+            var films = repositoryManager.Film.GetAllFilms(trackChanges);
+
+            var filmsDto = mapper.Map<IEnumerable<FilmDto>>(films); 
+
+            return filmsDto; 
         }
     }
 }

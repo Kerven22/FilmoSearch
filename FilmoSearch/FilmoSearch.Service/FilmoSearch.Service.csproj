@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FilmoSearch.Contracts\FilmoSearch.Contracts.csproj" />
     <ProjectReference Include="..\FilmoSearch.Serivce.Contracts\FilmoSearch.Serivce.Contracts.csproj" />
   </ItemGroup>

@@ -1,3 +1,4 @@
+using FilmoSearch.Contracts;
 using FilmoSearch.Extentions;
 using FilmoSearch.Repository.Contexts;
 using Microsoft.EntityFrameworkCore;
@@ -13,8 +14,12 @@ builder.Services.ConfigureLogger();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.AddPresentationLayer();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 var app = builder.Build();
+
+var logger = app.Services.GetRequiredService<ILoggerManager>();
+app.ConfigureExceptionHandler(logger); 
 
 app.MapControllers();
 

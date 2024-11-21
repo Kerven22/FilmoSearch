@@ -18,15 +18,8 @@ namespace FilmoSearch.Presentation.Controllers
         [HttpGet]
         public IActionResult GetCompanies()
         {
-            try
-            {
-                var companies = _service.FilmService.GetAllFilms(trackChanges: false);
-                return Ok(companies); 
-            }
-            catch
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError); 
-            }
+            var companies = _service.FilmService.GetAllFilms(trackChanges: false);
+            return Ok(companies); 
         }
     }
 }

@@ -1,23 +1,22 @@
 ﻿using FilmoSearch.Contracts;
-using Serilog;
+using Microsoft.Extensions.Logging;
 
 namespace FilmoSearch.Logging
 {
     public class LoggerManager : ILoggerManager
     {
-        private readonly ILogger logger;
-
-        public LoggerManager()
+        private readonly ILogger<LoggerManager> _logger;
+        public LoggerManager(ILogger<LoggerManager> logger)
         {
-
+            _logger = logger; 
         }
 
-        public void LogDebug(string message) => logger.Debug(message);
+        public void LogDebug(string message) => _logger.LogDebug(message);
 
-        public void LogError(string message) => logger.Error(message);
+        public void LogError(string message) => _logger.LogError(message);
 
-        public void LogInfo(string message) => logger.Information(message);
+        public void LogInfo(string message) => _logger.LogInformation(message);
 
-        public void LogWarn(string message) => logger.Warning(message);
+        public void LogWarn(string message) => _logger.LogWarning(message); 
     }
 }

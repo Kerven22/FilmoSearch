@@ -1,5 +1,5 @@
 name: PuhsAction
-on: puhs
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest
